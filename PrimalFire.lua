@@ -5,12 +5,12 @@ local function DoReadyAndRotation()
     total_times = total_times + 1;
     if (total_times > 4) then
         total_times = 0
-        SendChatMessage("[SELF-MADE ADDON]: Last run before rotations! (5/5)", "PARTY", "Common");
-        SendChatMessage("[SELF-MADE ADDON]: Resetting counter!", "PARTY", "Common");
+        SendChatMessage("[PrimalFire ADDON]: Last run before rotations! (5/5)", "PARTY", "Common");
+        SendChatMessage("[PrimalFire ADDON]: Resetting counter!", "PARTY", "Common");
         return
     end
     DoReadyCheck()
-    SendChatMessage("[SELF-MADE ADDON]: This will be run " .. total_times .. "/5", "PARTY", "Common");
+    SendChatMessage("[PrimalFire ADDON]: This will be run " .. total_times .. "/5", "PARTY", "Common");
 end
 
 local f = CreateFrame("Frame")
