@@ -13,6 +13,11 @@ local function endRotation()
     return
 end
 
+local function endRun()
+    SendChatMessage("[Arlow's PrimalFire ADDON]: {rt1} LOOT NOW {rt1}", "PARTY", "Common");
+    return
+end
+
 local function DoReadyAndRotation()
     DoReadyCheck()
     SendChatMessage("[Arlow's PrimalFire ADDON]: This will be run " .. total_times .. "/5!", "PARTY", "Common");
@@ -37,6 +42,7 @@ f:SetScript("OnEvent", function(self, event, msg)
         SendChatMessage("[Arlow's PrimalFire ADDON]: Everyone is ready, let's start!", "PARTY", "Common");
         DEFAULT_CHAT_FRAME.editBox:SetText("/countdown 105")
         ChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox, 0)
+        C_Timer.After(105, endRun)
     end
 end)
 
