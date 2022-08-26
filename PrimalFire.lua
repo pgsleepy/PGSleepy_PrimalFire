@@ -16,9 +16,9 @@ end
 local f = CreateFrame("Frame")
 f:RegisterEvent("CHAT_MSG_SYSTEM")
 f:SetScript("OnEvent", function(self, event, msg)
-    if strfind(msg, "ready") then
+    if strfind(msg, "Everyone is Ready") then
         PlaySound(5274)
-        SendChatMessage("[SELF-MADE ADDON]: Everyone is ready, let's start!", "PARTY", "Common");
+        SendChatMessage("[PrimalFire ADDON]: Everyone is ready, let's start!", "PARTY", "Common");
         DEFAULT_CHAT_FRAME.editBox:SetText("/countdown 105")
         ChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox, 0)
     end
