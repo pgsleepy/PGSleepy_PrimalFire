@@ -1,0 +1,7 @@
+## Interface: 90207
+## Title: PGSleepy_PrimalFire
+## Notes: This addon is because Sleepy is lazy: Counts rotations and initiates ReadyChecks and sets Countdown for it.
+## Author: PGSleepy
+## Version: 0.0.1
+
+PrimalFire.lua
