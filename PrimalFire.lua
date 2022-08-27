@@ -28,7 +28,7 @@ f:RegisterEvent("CHAT_MSG_SYSTEM")
 f:SetScript("OnEvent", function(self, event, msg)
     if strfind(msg, "Everyone is Ready") then --Check if the System Message contains the string "ready".
         total_times = total_times + 1;
-        if (total_times > 4) then
+        if (total_times > 5) then
             SendChatMessage("[Arlow's PrimalFire ADDON]: Last run before rotations! (5/5)", "PARTY", "Common");
             PlaySound(5274)
             SendChatMessage("[Arlow's PrimalFire ADDON]: Everyone is ready, let's start!", "PARTY", "Common");
